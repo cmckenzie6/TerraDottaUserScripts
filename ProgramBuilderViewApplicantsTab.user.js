@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Program Builder View Applicants Tab
 // @namespace    https://passport.gwu.edu/
-// @version      0.2
+// @version      0.3
 // @description  Adds a "View Applicants" tab to the Program Builder in TDS, allowing you to search for applicants directly from that program's settings.
 // @author       Colin McKenzie
 // @match        https://*.edu/index.cfm?FuseAction=ProgramAdmin.*
@@ -20,15 +20,23 @@
     });
 
     function toggleApplicantSearchPanel(){
-        if ($("#applicantSearchPanel").length == 0){
+        if ($("#applicantSearchPanel").length == 0){ //load the panel the first time the button is clicked
             loadApplicantSearchPanel();
-        } else {
+            $("#viewApps").removeClass("btn-primary");
+            $("#viewApps").addClass("btn-default");
+        } else { //otherwise, just toggle panel visibility
             if($("#applicantSearchPanel").is(":hidden")){
                 $("#applicantSearchPanel").show();
+                $("#viewApps").removeClass("btn-primary");
+                $("#viewApps").addClass("btn-default");
             } else {
                 $("#applicantSearchPanel").hide();
+                $("#viewApps").addClass("btn-primary");
+                $("#viewApps").removeClass("btn-default");
             }
         }
+        //toggle the button class
+
     }
 
     function loadApplicantSearchPanel(){
