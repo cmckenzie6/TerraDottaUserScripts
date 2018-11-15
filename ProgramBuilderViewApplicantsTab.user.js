@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Program Builder View Applicants Tab
 // @namespace    https://passport.gwu.edu/
-// @version      0.1
+// @version      0.2
 // @description  Adds a "View Applicants" tab to the Program Builder in TDS, allowing you to search for applicants directly from that program's settings.
 // @author       Colin McKenzie
 // @match        https://*.edu/index.cfm?FuseAction=ProgramAdmin.*
@@ -14,10 +14,22 @@
     //add a new "View Applicants" button
     $("#sa_content > div.tabbed-nav.hidden-sm.hidden-xs").append('<marker><button id="viewApps" class="btn btn-primary btn-sm">View Applicants</button></marker>');
 
-    //load the search panel when the button is clicked
+    //bind the search panel to the button
     $("#viewApps").click(function(){
-        loadApplicantSearchPanel();
+        toggleApplicantSearchPanel();
     });
+
+    function toggleApplicantSearchPanel(){
+        if ($("#applicantSearchPanel").length == 0){
+            loadApplicantSearchPanel();
+        } else {
+            if($("#applicantSearchPanel").is(":hidden")){
+                $("#applicantSearchPanel").show();
+            } else {
+                $("#applicantSearchPanel").hide();
+            }
+        }
+    }
 
     function loadApplicantSearchPanel(){
         //get the program ID for the ajax call later. see https://developer.mozilla.org/en-US/docs/Web/API/URL
@@ -25,8 +37,8 @@
         var url = new URL(url_string);
         var progID = url.searchParams.get("Program_ID");
 
-        //create a placeholder div that will hold the app cycles (loaded via ajax)
-        $( "<div class='panel panel-primary'><div class='panel-heading'>View Applicants for Program</div><div class='panel-body'><strong>Select Term:</strong><div id='placeholder_appcycles'>Loading...</div><div style='width:30%; padding-bottom:1em;' id='container_appcycles'></div><button id='customAppSearchBtn' class='btn btn-primary' disabled>View Applications</button></div></div>" ).insertAfter( "#viewApps" );
+        //create the search panel
+        $( "<div id='applicantSearchPanel' class='panel panel-primary'><div class='panel-heading'>View Applicants for Program</div><div class='panel-body'><strong>Select Term:</strong><div id='placeholder_appcycles'>Loading...</div><div style='width:30%; padding-bottom:1em;' id='container_appcycles'></div><button id='customAppSearchBtn' class='btn btn-primary' disabled>View Applications</button></div></div>" ).insertAfter( "#sa_content > div.tabbed-nav.hidden-sm.hidden-xs" );
 
         //bind the view applications button to the search function
         $("#customAppSearchBtn").click(function(){
