@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Program Builder View Applicants Tab
-// @namespace    https://passport.gwu.edu/
-// @version      0.3
+// @namespace    http://powdercake.space/
+// @version      0.4
 // @description  Adds a "View Applicants" tab to the Program Builder in TDS, allowing you to search for applicants directly from that program's settings.
 // @author       Colin McKenzie
 // @match        https://*.edu/index.cfm?FuseAction=ProgramAdmin.*
