@@ -12,5 +12,5 @@ You must have the Tampermonkey extension installed in the Google Chrome web brow
 ## Available Scripts
 ### ProgramBuilderViewApplicantsTab
 <img src="https://github.com/cmckenzie6/TerraDottaUserScripts/blob/master/screenshots/ProgramBuilderViewApplicantsTab.png" alt="drawing" width="400"/>
-[Install via Tampermonkey](https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/ProgramBuilderViewApplicantsTab.user.js)
-This script adds a "View Applicants" button to the Program Builder. Clicking on the button will open a panel allowing you to search for applicants on that program. You can optionally select a specific term you want to search for, otherwise it will search all terms.
+<a href="https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/ProgramBuilderViewApplicantsTab.user.js">Install via Tampermonkey</a>
+<p>This script adds a "View Applicants" button to the Program Builder. Clicking on the button will open a panel allowing you to search for applicants on that program. You can optionally select a specific term you want to search for, otherwise it will search all terms.</p>
