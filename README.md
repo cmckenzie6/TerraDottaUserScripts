@@ -2,10 +2,10 @@
 Tampermonkey userscripts for use in Terra Dotta Software.
 
 ## Requirements
-You must have the Tampermonkey extension installed in the Google Chrome web browser.
+You must have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in the Google Chrome web browser.
 
 ## Installation
-1. Ensure you have the Tampermonkey extension installed in Google Chrome.
+1. Ensure you have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in Google Chrome.
 2. Click on the 'raw' link for a script you want to install.
 3. Click the Install button.
 
