@@ -6,7 +6,7 @@ You must have the [Tampermonkey extension](https://chrome.google.com/webstore/de
 
 ## Installation
 1. Ensure you have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in Google Chrome.
-2. Click on the 'raw' link for a script you want to install.
+2. Click on the Installation link below for a script you want to install.
 3. Click the Install button.
 
 ## Available Scripts
