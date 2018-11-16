@@ -10,6 +10,11 @@ You must have the [Tampermonkey extension](https://chrome.google.com/webstore/de
 3. Click the Install button.
 
 ## Available Scripts
+### MassCombineQueriesAndReports
+<a href="https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/MassCombineQueriesAndReports.user.js">Install via Tampermonkey</a><br>
+<img src="https://raw.githubusercontent.com/cmckenzie6/TerraDottaUserScripts/master/screenshots/MassCombineQueriesAndReports.PNG" width="400"/>
+<p>This script adds an "Auto Combine" button to the Admin Home page that will perform the "combine queries and reports" function for all checked queries and reports. You can check multiple queries and multiple reports. For example, say you have 3 queries for different programs that you need to combine into a STEP report and an insurance report. Simply check the boxes next to each query and report and the script will combine them all for you.</p>
+
 ### ProgramBuilderViewApplicantsTab
 <a href="https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/ProgramBuilderViewApplicantsTab.user.js">Install via Tampermonkey</a><br>
 <img src="https://github.com/cmckenzie6/TerraDottaUserScripts/blob/master/screenshots/ProgramBuilderViewApplicantsTab.png" alt="drawing" width="400"/>
