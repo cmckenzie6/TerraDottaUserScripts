@@ -24,7 +24,7 @@ You must have the [Tampermonkey extension](https://chrome.google.com/webstore/de
 <img src="https://raw.githubusercontent.com/cmckenzie6/TerraDottaUserScripts/master/screenshots/CoordinateHelper.PNG" width="400"/>
 <p>This script allows you to paste a full coordinate string (in either decimal or degrees/minutes/seconds formats) into the Latitude box when adding or editing a Location. The script will automatically split the latitude and longitude into the appropriate boxes, convert it to decimal (if necessary), and check for out of range errors.</p>
 <p>Valid input formats:</p>
-<ul><li>-34.4396082,150.7188232</li><li>S 34°25′26″ E 150°53′36″</li></ul>
+<ul><li><code>-34.4396082,150.7188232</code></li><li><code>S 34°25′26″ E 150°53′36″</code></li></ul>
 
 ### MassCombineQueriesAndReports
 <a href="https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/MassCombineQueriesAndReports.user.js">Install via Tampermonkey</a><br>
