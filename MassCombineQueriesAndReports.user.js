@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  Combines all checked queries and reports from the Admin Home page.
 // @author       Colin McKenzie
-// @match        https://passport.gwu.edu/index.cfm?FuseAction=Administration.Home*
-// @match        https://passport.gwu.edu/index.cfm?FuseAction=Portal.Home*
+// @match        https://*.edu/index.cfm?FuseAction=Administration.Home*
+// @match        https://*.edu/index.cfm?FuseAction=Portal.Home*
 // @grant        none
 // ==/UserScript==
 
