@@ -14,6 +14,11 @@ You must have the [Tampermonkey extension](https://chrome.google.com/webstore/de
 3. Click the Install button.
 
 ## Available Scripts
+### Table of Contents
+1. <a href="#CoordinateHelper">CoordinateHelper</a>
+2. [MassCombineQueriesAndReports](#MassCombineQueriesAndReports)
+3. [ProgramBuilderViewApplicantsTab](#ProgramBuilderViewApplicantsTab)
+
 ### CoordinateHelper
 <a href="https://github.com/cmckenzie6/TerraDottaUserScripts/raw/master/CoordinateHelper.user.js">Install via Tampermonkey</a><br>
 <img src="https://raw.githubusercontent.com/cmckenzie6/TerraDottaUserScripts/master/screenshots/CoordinateHelper.PNG" width="400"/>
