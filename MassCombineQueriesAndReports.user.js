@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Combine Queries And Reports
 // @namespace    http://powdercake.space/
-// @version      0.1
+// @version      0.2
 // @description  Combines all checked queries and reports from the Admin Home page.
 // @author       Colin McKenzie
 // @match        https://*.edu/index.cfm?FuseAction=Administration.Home*
@@ -24,6 +24,20 @@
             localStorage.setItem('CQARdelayTime', $("#CQARdelayTime").val());
         });
     })
+
+    var baseTDUrl = new URL(window.location.href);
+
+    $("#qrys > table > tbody > tr > td > a[title='Click to execute this query']").each(function(){
+        var parsedUrl = new URL(baseTDUrl.origin+"/"+$(this).attr('href'));
+        var queryID = parsedUrl.searchParams.get("Search_ID");
+        $(this).parent().parent().prepend("<td class='text-center compact-column'><input name='Staff_Query_IDs' id='customChk"+queryID+"' type='checkbox' value='"+queryID+"'></td>");
+    });
+
+    $("#rpts > table > tbody > tr > td > a[title='Click to view this report']").each(function(){
+        var parsedUrl = new URL(baseTDUrl.origin+"/"+$(this).attr('href'));
+        var reportID = parsedUrl.searchParams.get("Report_ID");
+        $(this).parent().parent().prepend("<td class='text-center compact-column'><input name='Staff_Report_IDs' id='customChk"+reportID+"' type='checkbox' value='"+reportID+"'></td>");
+    });
 
     //initialize variables
     var CQARdelayTime = 3;
