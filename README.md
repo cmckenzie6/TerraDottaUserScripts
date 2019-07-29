@@ -6,7 +6,7 @@ Tampermonkey userscripts for use in Terra Dotta Software.
 These userscripts are not supported or endorsed by Terra Dotta in any way. Use them at your own risk.
 
 ## Requirements
-You must have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in the Google Chrome web browser.
+You must have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in the Google Chrome web browser. Scripts may work in Greasemonkey on Firefox with little tweaking, but there are no guarantees.
 
 ## Installation
 1. Ensure you have the [Tampermonkey extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed in Google Chrome.
